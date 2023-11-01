@@ -7,8 +7,8 @@ import fs from "fs/promises";
 
 const config = await Config.get();
 
-await config.setConfig("instagram_username", "thumendes.dev");
-await config.setConfig("instagram_password", "Ar@Me12#05");
+await config.setConfig("instagram_username", "...");
+await config.setConfig("instagram_password", "...");
 
 const username = config.get(ConfigKey.InstagramUsername) ?? raise(`Pendente configurar INSTAGRAM_USERNAME`);
 const password = config.get(ConfigKey.InstagramPassword) ?? raise(`Pendente configurar INSTAGRAM_PASSWORD`);
